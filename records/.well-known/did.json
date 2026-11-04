@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:web:token.xrpltoken.com",
+  "controller": "did:web:token.xrpltoken.com",
+  "alsoKnownAs": [
+    "did:web:xrpltoken.com"
+  ],
+  "service": [
+    {
+      "id": "did:web:token.xrpltoken.com#identity",
+      "type": "LinkedDomains",
+      "serviceEndpoint": [
+        "https://xrpltoken.com/identity/",
+        "https://token.xrpltoken.com/identity/"
+      ]
+    },
+    {
+      "id": "did:web:token.xrpltoken.com#xrpl-ledger-metadata",
+      "type": "LinkedDomains",
+      "serviceEndpoint": [
+        "https://xrpltoken.com/.well-known/xrp-ledger.toml",
+        "https://token.xrpltoken.com/.well-known/xrp-ledger.toml"
+      ]
+    }
+  ],
+  "image": "https://token.xrpltoken.com/xto-logo.png",
+  "xrpltoken": {
+    "name": "xrpltoken",
+    "currency": "XTO",
+    "network": "mainnet",
+    "domain": "token.xrpltoken.com",
+    "icon": "https://token.xrpltoken.com/xto-logo.png",
+    "supply": "100000000000",
+    "clawback": false
+  },
+  "origin": "https://token.xrpltoken.com"
+}

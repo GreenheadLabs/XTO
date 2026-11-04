@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /user/sandbox
+Disallow: /api/
+Sitemap: https://token.xrpltoken.com/sitemap.xml
