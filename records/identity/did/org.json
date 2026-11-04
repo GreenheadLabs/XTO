@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:web:xrpltoken.com",
+  "controller": "did:web:xrpltoken.com",
+  "alsoKnownAs": [
+    "did:web:token.xrpltoken.com"
+  ],
+  "service": [
+    {
+      "id": "#identity",
+      "type": "LinkedDomains",
+      "serviceEndpoint": [
+        "https://xrpltoken.com/identity/",
+        "https://token.xrpltoken.com/identity/",
+        "https://token.xrpltoken.com/",
+        "https://xrpltoken.com/.well-known/xrp-ledger.toml",
+        "https://token.xrpltoken.com/.well-known/xrp-ledger.toml"
+      ]
+    },
+    {
+      "id": "#token",
+      "type": "TokenInfo",
+      "serviceEndpoint": "https://token.xrpltoken.com/"
+    }
+  ],
+  "name": "xrpltoken",
+  "description": "The xrpltoken identity for the XTO project on XRPL Mainnet.",
+  "image": "https://token.xrpltoken.com/xto-logo.png",
+  "xrpltoken": {
+    "name": "xrpltoken",
+    "currency": "XTO",
+    "network": "mainnet",
+    "role": "organization",
+    "domain": "xrpltoken.com",
+    "icon": "https://token.xrpltoken.com/xto-logo.png",
+    "supply": "100000000000",
+    "clawback": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:xrpl:mainnet:rXToDb1PsivF5BVzeC9Aiz1AaMXZ7EPgf",
+  "controller": "did:xrpl:mainnet:rXToDb1PsivF5BVzeC9Aiz1AaMXZ7EPgf",
+  "alsoKnownAs": [
+    "https://xrpltoken.com/identity/did/treasury.json",
+    "https://token.xrpltoken.com/identity/did/treasury.json",
+    "https://token.xrpltoken.com/did/treasury.json"
+  ],
+  "verificationMethod": [
+    {
+      "id": "#xrpl-account",
+      "type": "XrplVerificationMethod",
+      "controller": "did:xrpl:mainnet:rXToDb1PsivF5BVzeC9Aiz1AaMXZ7EPgf",
+      "blockchainAccountId": "xrpl:mainnet:rXToDb1PsivF5BVzeC9Aiz1AaMXZ7EPgf"
+    }
+  ],
+  "authentication": [
+    "#xrpl-account"
+  ],
+  "assertionMethod": [
+    "#xrpl-account"
+  ],
+  "service": [
+    {
+      "id": "#identity",
+      "type": "LinkedDomains",
+      "serviceEndpoint": [
+        "https://xrpltoken.com/identity/",
+        "https://token.xrpltoken.com/identity/"
+      ]
+    },
+    {
+      "id": "#token",
+      "type": "TokenInfo",
+      "serviceEndpoint": "https://token.xrpltoken.com/"
+    }
+  ],
+  "name": "xrpltoken treasury",
+  "description": "XTO treasury on XRPL Mainnet. Holds long-term XTO inventory and receives protocol fees. Not the faucet claim signer.",
+  "image": "https://token.xrpltoken.com/xto-logo.png",
+  "xrpltoken": {
+    "name": "xrpltoken",
+    "currency": "XTO",
+    "network": "mainnet",
+    "role": "treasury",
+    "domain": "token.xrpltoken.com",
+    "icon": "https://token.xrpltoken.com/xto-logo.png",
+    "supply": "100000000000",
+    "clawback": false,
+    "notFaucet": true,
+    "faucetAddress": "rXTos99bDZ9bj7hWe29BkPeoH2w5sKsu1"
+  }
+}

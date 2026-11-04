@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:xrpl:mainnet:rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt",
+  "controller": "did:xrpl:mainnet:rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt",
+  "alsoKnownAs": [
+    "https://xrpltoken.com/identity/did/issuer.json",
+    "https://token.xrpltoken.com/identity/did/issuer.json",
+    "https://token.xrpltoken.com/did/issuer.json"
+  ],
+  "verificationMethod": [
+    {
+      "id": "#xrpl-account",
+      "type": "XrplVerificationMethod",
+      "controller": "did:xrpl:mainnet:rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt",
+      "blockchainAccountId": "xrpl:mainnet:rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt"
+    }
+  ],
+  "authentication": [
+    "#xrpl-account"
+  ],
+  "assertionMethod": [
+    "#xrpl-account"
+  ],
+  "service": [
+    {
+      "id": "#identity",
+      "type": "LinkedDomains",
+      "serviceEndpoint": [
+        "https://xrpltoken.com/identity/",
+        "https://token.xrpltoken.com/identity/"
+      ]
+    },
+    {
+      "id": "#token",
+      "type": "TokenInfo",
+      "serviceEndpoint": "https://token.xrpltoken.com/"
+    }
+  ],
+  "name": "xrpltoken issuer",
+  "description": "The xrpltoken XTO issuer account on XRPL Mainnet.",
+  "image": "https://token.xrpltoken.com/xto-logo.png",
+  "xrpltoken": {
+    "name": "xrpltoken",
+    "currency": "XTO",
+    "network": "mainnet",
+    "role": "issuer",
+    "domain": "token.xrpltoken.com",
+    "icon": "https://token.xrpltoken.com/xto-logo.png",
+    "supply": "100000000000",
+    "clawback": false
+  }
+}

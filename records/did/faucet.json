@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:xrpl:mainnet:rXTos99bDZ9bj7hWe29BkPeoH2w5sKsu1",
+  "controller": "did:xrpl:mainnet:rXTos99bDZ9bj7hWe29BkPeoH2w5sKsu1",
+  "alsoKnownAs": [
+    "https://xrpltoken.com/identity/did/faucet.json",
+    "https://token.xrpltoken.com/identity/did/faucet.json",
+    "https://token.xrpltoken.com/did/faucet.json"
+  ],
+  "verificationMethod": [
+    {
+      "id": "#xrpl-account",
+      "type": "XrplVerificationMethod",
+      "controller": "did:xrpl:mainnet:rXTos99bDZ9bj7hWe29BkPeoH2w5sKsu1",
+      "blockchainAccountId": "xrpl:mainnet:rXTos99bDZ9bj7hWe29BkPeoH2w5sKsu1"
+    }
+  ],
+  "authentication": [
+    "#xrpl-account"
+  ],
+  "assertionMethod": [
+    "#xrpl-account"
+  ],
+  "service": [
+    {
+      "id": "#identity",
+      "type": "LinkedDomains",
+      "serviceEndpoint": [
+        "https://xrpltoken.com/identity/",
+        "https://token.xrpltoken.com/identity/"
+      ]
+    },
+    {
+      "id": "#token",
+      "type": "TokenInfo",
+      "serviceEndpoint": "https://token.xrpltoken.com/"
+    }
+  ],
+  "name": "xrpltoken faucet",
+  "description": "XTO faucet claim signer on XRPL Mainnet. Pays 100 XTO drips. Separate from treasury.",
+  "image": "https://token.xrpltoken.com/xto-logo.png",
+  "xrpltoken": {
+    "name": "xrpltoken",
+    "currency": "XTO",
+    "network": "mainnet",
+    "role": "faucet",
+    "domain": "token.xrpltoken.com",
+    "icon": "https://token.xrpltoken.com/xto-logo.png",
+    "supply": "100000000000",
+    "clawback": false
+  }
+}

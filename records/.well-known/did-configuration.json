@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://identity.foundation/.well-known/did-configuration/v1"
+  ],
+  "linked_dids": [
+    {
+      "did": "did:xrpl:mainnet:rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt",
+      "assertion": "https://token.xrpltoken.com/did/issuer.json"
+    },
+    {
+      "did": "did:xrpl:mainnet:rXToDb1PsivF5BVzeC9Aiz1AaMXZ7EPgf",
+      "assertion": "https://token.xrpltoken.com/did/treasury.json"
+    },
+    {
+      "did": "did:xrpl:mainnet:rXToxX97eckpJLqFxBBTt5mr6V93P4J1Z",
+      "assertion": "https://token.xrpltoken.com/did/founder.json"
+    },
+    {
+      "did": "did:xrpl:mainnet:rXTos99bDZ9bj7hWe29BkPeoH2w5sKsu1",
+      "assertion": "https://token.xrpltoken.com/did/faucet.json"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:xrpl:mainnet:rXToxX97eckpJLqFxBBTt5mr6V93P4J1Z",
+  "controller": "did:xrpl:mainnet:rXToxX97eckpJLqFxBBTt5mr6V93P4J1Z",
+  "alsoKnownAs": [
+    "https://xrpltoken.com/identity/did/founder.json",
+    "https://token.xrpltoken.com/identity/did/founder.json",
+    "https://token.xrpltoken.com/did/founder.json"
+  ],
+  "verificationMethod": [
+    {
+      "id": "#xrpl-account",
+      "type": "XrplVerificationMethod",
+      "controller": "did:xrpl:mainnet:rXToxX97eckpJLqFxBBTt5mr6V93P4J1Z",
+      "blockchainAccountId": "xrpl:mainnet:rXToxX97eckpJLqFxBBTt5mr6V93P4J1Z"
+    }
+  ],
+  "authentication": [
+    "#xrpl-account"
+  ],
+  "assertionMethod": [
+    "#xrpl-account"
+  ],
+  "service": [
+    {
+      "id": "#identity",
+      "type": "LinkedDomains",
+      "serviceEndpoint": [
+        "https://xrpltoken.com/identity/",
+        "https://token.xrpltoken.com/identity/"
+      ]
+    },
+    {
+      "id": "#token",
+      "type": "TokenInfo",
+      "serviceEndpoint": "https://token.xrpltoken.com/"
+    }
+  ],
+  "name": "xrpltoken founder",
+  "description": "The xrpltoken founder account on XRPL Mainnet.",
+  "image": "https://token.xrpltoken.com/xto-logo.png",
+  "xrpltoken": {
+    "name": "xrpltoken",
+    "currency": "XTO",
+    "network": "mainnet",
+    "role": "founder",
+    "domain": "token.xrpltoken.com",
+    "icon": "https://token.xrpltoken.com/xto-logo.png",
+    "supply": "100000000000",
+    "clawback": false
+  }
+}

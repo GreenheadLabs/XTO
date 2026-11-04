@@ -1,0 +1,14 @@
+{
+  "name": "xto-token-records",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public records host for token.xrpltoken.com",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,85 @@
+[METADATA]
+modified = 2026-09-26T18:17:23.000Z
+
+[[ACCOUNTS]]
+address = "rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt"
+network = "main"
+desc = "XTO issuer"
+
+[[ACCOUNTS]]
+address = "rXToDb1PsivF5BVzeC9Aiz1AaMXZ7EPgf"
+network = "main"
+desc = "XTO treasury (50,000,000,000 XTO escrowed until 2027-09-25T01:00:00Z)"
+
+[[ACCOUNTS]]
+address = "rXToxX97eckpJLqFxBBTt5mr6V93P4J1Z"
+network = "main"
+desc = "XTO founder (5,000,000,000 XTO escrowed until 2027-09-25T01:00:00Z)"
+
+[[ACCOUNTS]]
+address = "rXTos99bDZ9bj7hWe29BkPeoH2w5sKsu1"
+network = "main"
+desc = "XTO faucet"
+
+[[ACCOUNTS]]
+address = "rXToGnNKppJVw64Grz7baZMTbkod5Y9ZM"
+network = "main"
+desc = "XTO/XRP LP burn (blackholed)"
+
+[[ACCOUNTS]]
+address = "rXTopgrc4gpNke5dCxUXVm5rhTtrTtBMQ"
+network = "main"
+desc = "XTO/RLUSD LP burn (blackholed)"
+
+[[ACCOUNTS]]
+address = "rJiMszsH9EzRpcQDV8FDHdgDYhZWUqxpY3"
+network = "main"
+desc = "Jim — xrpltoken market-making account"
+[[ACCOUNTS]]
+address = "rBoBpWZmrVGxfC4dUEvS75RTonG3fPhxsW"
+network = "main"
+desc = "Bob — xrpltoken market-making account"
+
+[[ACCOUNTS]]
+address = "rGPXHA1Q7ccrLkUpFRAr9YAABcmA8ckVKB"
+network = "main"
+desc = "Liquidity market-making account"
+
+[[CURRENCIES]]
+code = "XTO"
+issuer = "rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt"
+network = "main"
+display_decimals = 2
+
+[[ISSUERS]]
+address = "rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt"
+name = "xrpltoken"
+desc = "Issuing account for the xrpltoken (XTO) token on the XRP Ledger."
+icon = "https://token.xrpltoken.com/xto-logo.png"
+
+[[TOKENS]]
+issuer = "rXToZNbdmsPvYdcgJWCXHrfEDcLi8kVvt"
+currency = "XTO"
+name = "xrpltoken"
+desc = "xrpltoken (XTO) is a fixed-supply token on the XRP Ledger: 100,000,000,000 XTO, no freeze, no clawback, with founder and treasury allocations time-locked in on-ledger escrow until September 2027."
+icon = "https://token.xrpltoken.com/xto-logo.png"
+asset_class = "other"
+
+[[TOKENS.URLS]]
+url = "https://token.xrpltoken.com"
+type = "website"
+title = "Official Website"
+
+[[TOKENS.URLS]]
+url = "https://xrpltoken.com"
+type = "website"
+title = "xrpltoken.com"
+
+[[TOKENS.URLS]]
+url = "https://x.com/xrpltoken"
+type = "social"
+title = "X (Twitter)"
+
+[[PRINCIPALS]]
+name = "xrpltoken"
+x = "xrpltoken"
